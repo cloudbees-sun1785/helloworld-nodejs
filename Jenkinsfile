@@ -10,7 +10,7 @@ pipeline {
           checkout scm
           container ('nodejs'){
             echo 'Hello World!'   
-            sh 'node -version'
+            sh 'node --version'
           }
       }
     }
